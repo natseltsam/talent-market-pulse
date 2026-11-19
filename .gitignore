@@ -1,0 +1,15 @@
+# Python environment and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Local detail database (rebuilt by pipeline.py; only summaries in data/ are committed)
+*.db
+
+# Secrets: never commit these
+.streamlit/secrets.toml
+.env
+
+# Practice files kept local
+first_call.py
+sql_test.ipynb
