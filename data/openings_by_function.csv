@@ -1,0 +1,60 @@
+snapshot_date,company,source,function,open_jobs,open_postings
+2026-11-20,anthropic,greenhouse,Data & Analytics,10,10
+2026-11-20,anthropic,greenhouse,Engineering,119,134
+2026-11-20,anthropic,greenhouse,Finance,42,43
+2026-11-20,anthropic,greenhouse,"Legal, Policy & Compliance",37,37
+2026-11-20,anthropic,greenhouse,Marketing & Comms,26,26
+2026-11-20,anthropic,greenhouse,People,14,16
+2026-11-20,anthropic,greenhouse,"Product, Design & Programs",82,94
+2026-11-20,anthropic,greenhouse,Research & ML,63,69
+2026-11-20,anthropic,greenhouse,Sales & GTM,116,125
+2026-11-20,anthropic,greenhouse,Security & Trust,81,87
+2026-11-20,binance,greenhouse,Data & Analytics,15,18
+2026-11-20,binance,greenhouse,Engineering,18,18
+2026-11-20,binance,greenhouse,Finance,4,4
+2026-11-20,binance,greenhouse,IT & Business Systems,6,6
+2026-11-20,binance,greenhouse,"Legal, Policy & Compliance",44,44
+2026-11-20,binance,greenhouse,Marketing & Comms,15,15
+2026-11-20,binance,greenhouse,Operations & Support,22,23
+2026-11-20,binance,greenhouse,Other,6,6
+2026-11-20,binance,greenhouse,People,6,6
+2026-11-20,binance,greenhouse,"Product, Design & Programs",15,15
+2026-11-20,binance,greenhouse,Research & ML,5,5
+2026-11-20,binance,greenhouse,Sales & GTM,59,62
+2026-11-20,binance,greenhouse,Security & Trust,5,5
+2026-11-20,deliveroo,greenhouse,Data & Analytics,5,5
+2026-11-20,deliveroo,greenhouse,Engineering,28,39
+2026-11-20,deliveroo,greenhouse,Finance,4,4
+2026-11-20,deliveroo,greenhouse,IT & Business Systems,3,3
+2026-11-20,deliveroo,greenhouse,"Legal, Policy & Compliance",3,3
+2026-11-20,deliveroo,greenhouse,Marketing & Comms,15,17
+2026-11-20,deliveroo,greenhouse,Operations & Support,14,14
+2026-11-20,deliveroo,greenhouse,Other,2,2
+2026-11-20,deliveroo,greenhouse,People,7,7
+2026-11-20,deliveroo,greenhouse,"Product, Design & Programs",7,12
+2026-11-20,deliveroo,greenhouse,Research & ML,5,6
+2026-11-20,deliveroo,greenhouse,Sales & GTM,64,70
+2026-11-20,deliveroo,greenhouse,Security & Trust,6,6
+2026-11-20,okta,greenhouse,Data & Analytics,2,2
+2026-11-20,okta,greenhouse,Engineering,125,127
+2026-11-20,okta,greenhouse,Finance,14,17
+2026-11-20,okta,greenhouse,IT & Business Systems,40,40
+2026-11-20,okta,greenhouse,"Legal, Policy & Compliance",3,3
+2026-11-20,okta,greenhouse,Marketing & Comms,17,17
+2026-11-20,okta,greenhouse,Operations & Support,11,11
+2026-11-20,okta,greenhouse,People,11,14
+2026-11-20,okta,greenhouse,"Product, Design & Programs",28,29
+2026-11-20,okta,greenhouse,Sales & GTM,95,97
+2026-11-20,okta,greenhouse,Security & Trust,15,15
+2026-11-20,openai,ashby,Data & Analytics,13,13
+2026-11-20,openai,ashby,Engineering,274,274
+2026-11-20,openai,ashby,Finance,27,27
+2026-11-20,openai,ashby,IT & Business Systems,8,8
+2026-11-20,openai,ashby,"Legal, Policy & Compliance",21,21
+2026-11-20,openai,ashby,Marketing & Comms,43,43
+2026-11-20,openai,ashby,Operations & Support,69,69
+2026-11-20,openai,ashby,People,27,27
+2026-11-20,openai,ashby,"Product, Design & Programs",42,42
+2026-11-20,openai,ashby,Research & ML,72,72
+2026-11-20,openai,ashby,Sales & GTM,220,220
+2026-11-20,openai,ashby,Security & Trust,37,37
