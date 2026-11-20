@@ -15,3 +15,7 @@ started_at,snapshot_date,company,http_status,postings_count,error_message,status
 2026-11-19T21:06:54+00:00,2026-11-19,okta,200,363,,success
 2026-11-19T21:06:54+00:00,2026-11-19,binance,200,226,,success
 2026-11-19T21:06:54+00:00,2026-11-19,deliveroo,200,189,,success
+2026-11-20T16:18:55+00:00,2026-11-20,anthropic,200,641,,success
+2026-11-20T16:18:55+00:00,2026-11-20,okta,200,369,,success
+2026-11-20T16:18:55+00:00,2026-11-20,binance,200,227,,success
+2026-11-20T16:18:55+00:00,2026-11-20,deliveroo,200,191,,success
