@@ -595,6 +595,9 @@ anthropic,greenhouse,4579996008,"Commercial Counsel, GTM Strategic Alliances ","
 anthropic,greenhouse,4576123008,"Manager, Applied AI Architect",Engineering,2026-11-21T07:24:21-05:00,2026-11-21T07:24:21-05:00,0,2026-11-21,2026-11-22,,0
 anthropic,greenhouse,4579380008,"Research Engineer, Finetuning",Research & ML,2026-11-21T07:52:27-05:00,2026-11-21T07:52:27-05:00,0,2026-11-21,2026-11-22,,0
 anthropic,greenhouse,4579808008,"Research Operations, External Artifacts",Research & ML,2026-11-20T19:47:30-05:00,2026-11-20T19:47:30-05:00,0,2026-11-21,2026-11-22,,0
+anthropic,greenhouse,4580275008,"Program Manager, Cloud Partners",Marketing & Comms,2026-11-22T14:46:05-05:00,2026-11-22T14:46:05-05:00,0,2026-11-22,2026-11-22,,0
+anthropic,greenhouse,4580276008,Campaign Manager,Marketing & Comms,2026-11-22T14:37:34-05:00,2026-11-22T14:37:34-05:00,0,2026-11-22,2026-11-22,,0
+anthropic,greenhouse,4580278008,Head of Campaign Operations,Marketing & Comms,2026-11-22T14:40:48-05:00,2026-11-22T14:40:48-05:00,0,2026-11-22,2026-11-22,,0
 binance,greenhouse,4533857101,PR KOL Specialist - MENA,Sales & GTM,2026-10-14T00:44:33-04:00,2026-10-14T00:44:33-04:00,0,2026-11-20,2026-11-22,,0
 binance,greenhouse,4533863101,Cloud AI Engineer (Legal & Compliance),Security & Trust,2026-10-13T21:35:55-04:00,2026-10-13T21:35:55-04:00,0,2026-11-20,2026-11-22,,0
 binance,greenhouse,4533872101,Backend Engineer (Java) -Trading,Engineering,2026-10-13T21:35:40-04:00,2026-10-13T21:35:40-04:00,0,2026-11-20,2026-11-22,,0
@@ -1394,7 +1397,7 @@ openai,ashby,0e078d07-fb0b-4893-b90a-f50e413f3e13,"Product Marketing Lead, Finan
 openai,ashby,0ed5f6c7-3977-4da9-9961-202fe76de456,"Applied AI Engineer, Digital Natives",Sales & GTM,2026-10-23T17:25:44.476+00:00,2026-10-23T17:25:44.476+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,0f4da2b4-df8a-4560-809d-d0a6ac1ad9bc,"Product Manager, Financial Engineering","Product, Design & Programs",2026-05-04T16:56:31.623+00:00,2026-05-04T16:56:31.623+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,0f58ac8e-6dd2-400d-9c34-29c62b7804b5,Mechanical Commissioning Lead,Engineering,2026-08-05T17:25:38.726+00:00,2026-08-05T17:25:38.726+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,0f600ed1-d70a-4648-820f-a1d1da3f7617,"Research Engineer / Research Scientist, Human Flourishing",Research & ML,2026-10-28T17:40:14.767+00:00,2026-10-28T17:40:14.767+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,0f600ed1-d70a-4648-820f-a1d1da3f7617,"Research Engineer / Research Scientist, Human Flourishing",Research & ML,2026-10-28T17:40:14.767+00:00,2026-10-28T17:40:14.767+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,0f887fe6-39f4-44f6-8ee5-230c3002f0d7,"Software Engineer, Private Computing",Engineering,2026-08-20T22:28:11.915+00:00,2026-08-20T22:28:11.915+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,0fc4742f-21f9-40a3-925e-adeb0a6920c1,Training - Runtime Foundations Engineer,Engineering,2026-03-09T18:29:12.507+00:00,2026-03-09T18:29:12.507+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,0fca3b36-8aaa-491a-be87-09efacfeca5e,"Senior Manager, Technology Sourcing",Finance,2026-11-17T20:55:18.868+00:00,2026-11-17T20:55:18.868+00:00,0,2026-11-20,2026-11-22,,0
@@ -1424,7 +1427,7 @@ openai,ashby,1566f1cb-dd46-4753-a8e3-7890c55882a3,"B2B Partnerships, Business De
 openai,ashby,16596d69-1e40-499b-9d62-13e6f6a498de,"Sales Development Leader,  Singapore",Sales & GTM,2026-11-05T05:50:29.446+00:00,2026-11-05T05:50:29.446+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,167e2ee5-7280-4153-9490-5e7a8372e1dc,"Senior Counsel, Commercial (Health and Life Sciences)","Legal, Policy & Compliance",2026-11-09T17:39:19.020+00:00,2026-11-09T17:39:19.020+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,171868ac-1070-4357-b990-acc918f68dc2,"Creative Lead, Japan",Marketing & Comms,2026-10-16T16:34:01.601+00:00,2026-10-16T16:34:01.601+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,171ebca6-de53-4d6e-a312-30332f353957,"Research Engineer/Research Scientist - Post Training, North Stars",Research & ML,2026-06-25T04:24:09.112+00:00,2026-06-25T04:24:09.112+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,171ebca6-de53-4d6e-a312-30332f353957,"Research Engineer/Research Scientist - Post Training, North Stars",Research & ML,2026-06-25T04:24:09.112+00:00,2026-06-25T04:24:09.112+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,1790fe9e-2ac3-45df-894e-f731d243395f,AI Deployment Manager - Builder,Sales & GTM,2026-11-04T15:39:36.756+00:00,2026-11-04T15:39:36.756+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,186bf7d1-0531-47fc-8e81-4429cbd3b5cb,AI Support Engineer - Toronto (Weekend Shift) ,Operations & Support,2026-09-28T23:36:51.678+00:00,2026-09-28T23:36:51.678+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,18b4427e-b168-475e-a1e2-92a86c73f0f0,Applied AI Delivery Lead - Mountain View,Sales & GTM,2026-10-30T18:58:31.936+00:00,2026-10-30T18:58:31.936+00:00,0,2026-11-20,2026-11-22,,0
@@ -1441,7 +1444,7 @@ openai,ashby,1ae6ff7f-5c0a-42cd-8231-00e69b39b02a,"Cyber AI Partner Director, Am
 openai,ashby,1b62655e-87e5-4dfb-ad92-03dabeb8304f,"Senior Manager, Accounts Payable - Payments",Finance,2026-11-13T01:34:38.211+00:00,2026-11-13T01:34:38.211+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,1baad891-43b8-4e2a-9e6c-f68741e718a4,"Applied AI Architect, Healthcare & Life Sciences",Sales & GTM,2026-09-16T18:05:34.957+00:00,2026-09-16T18:05:34.957+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,1bec1791-b073-4f2a-9de6-34e36238c216,"Staff PLM & Engineering Applications Engineer, Consumer Devices",Engineering,2026-09-16T00:52:14.001+00:00,2026-09-16T00:52:14.001+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,1bf678c5-1058-45ca-b9bd-b0029fccd60e,"Research Engineer / Research Scientist - Post Training, Personalization ",Research & ML,2026-08-03T21:09:47.125+00:00,2026-08-03T21:09:47.125+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,1bf678c5-1058-45ca-b9bd-b0029fccd60e,"Research Engineer / Research Scientist - Post Training, Personalization ",Research & ML,2026-08-03T21:09:47.125+00:00,2026-08-03T21:09:47.125+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,1c48f39f-60ea-4636-87ed-8b4b4f5243e5,"Systems Software Engineer, Security, First Party Hardware",Engineering,2026-06-08T23:42:40.083+00:00,2026-06-08T23:42:40.083+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,1c4d812f-d6da-4ea3-b1b3-d1877610b731,"Manager, Applied AI Architects",Sales & GTM,2026-09-01T08:09:21.803+00:00,2026-09-01T08:09:21.803+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,1c516e9f-c97d-4a40-8529-9871dac615a5,Research Engineer / Research Scientist- Post Training,Research & ML,2025-12-01T20:32:36.232+00:00,2025-12-01T20:32:36.232+00:00,0,2026-11-20,2026-11-20,2026-11-20,0
@@ -1494,7 +1497,7 @@ openai,ashby,27f0dba0-bbb0-42e3-ae58-e6bf516924cb,"Client Partner, Ads Solutions
 openai,ashby,2893060b-3795-4780-b538-48bb7d52254b,"Technical Product Manager, GRC Systems",Security & Trust,2026-11-18T17:12:19.954+00:00,2026-11-18T17:12:19.954+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,28c96920-a412-47c0-88f8-342790d779ff,"Partner Director, McKinsey Alliance ",Sales & GTM,2026-08-12T22:26:40.313+00:00,2026-08-12T22:26:40.313+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,28cd6fe2-4096-426b-8b08-52a66458e2c6,Applied AI Architect,Sales & GTM,2025-11-17T01:52:20.520+00:00,2025-11-17T01:52:20.520+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,29074a51-9cb3-47c9-a8a7-f283cd14fa6c,"Research Engineer / Research Scientist - Post Training, Memory",Research & ML,2026-08-03T20:55:39.979+00:00,2026-08-03T20:55:39.979+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,29074a51-9cb3-47c9-a8a7-f283cd14fa6c,"Research Engineer / Research Scientist - Post Training, Memory",Research & ML,2026-08-03T20:55:39.979+00:00,2026-08-03T20:55:39.979+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,2928f960-8f97-4bb6-aafd-3ffbe70d5ea8,"Lead HRBP, GTM",People,2026-11-17T19:54:40.093+00:00,2026-11-17T19:54:40.093+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,295464f1-7d48-468f-afe2-87f9075b7a20,Dedicated Support Engineer - Toronto,Operations & Support,2026-09-25T17:33:10.102+00:00,2026-09-25T17:33:10.102+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,2986efa0-6d1c-4a1f-a629-13ad86559e24,"Engineering Technician, Actuators",Research & ML,2026-10-23T19:10:59.077+00:00,2026-10-23T19:10:59.077+00:00,0,2026-11-20,2026-11-22,,0
@@ -1745,7 +1748,7 @@ openai,ashby,70cfa7de-bf97-41e3-9784-8e123439a1d8,"Engineering Manager, Robotics
 openai,ashby,70eba6e4-73e0-4cf9-a0d5-e49caeca9d7b,Onboarding Program Manager - APAC,People,2026-11-13T08:50:39.477+00:00,2026-11-13T08:50:39.477+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,71004494-9a55-4ed5-b458-2ff475f0d881,"Research Program Manager, Data Acquisition",Research & ML,2026-06-05T19:09:39.017+00:00,2026-06-05T19:09:39.017+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,71838fdf-4476-490c-81b6-4bf0746f6774,"Software Engineer, Plugin Developer Platform",Engineering,2026-08-18T19:12:23.311+00:00,2026-08-18T19:12:23.311+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,719cc0f6-ed38-41db-8870-299b4d336f37,"Research Engineer / Research Scientist, Health",Research & ML,2026-08-21T21:05:26.411+00:00,2026-08-21T21:05:26.411+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,719cc0f6-ed38-41db-8870-299b4d336f37,"Research Engineer / Research Scientist, Health",Research & ML,2026-08-21T21:05:26.411+00:00,2026-08-21T21:05:26.411+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,71e7252f-abb1-4b74-8e69-318413042357,"Applied AI Engineer, Startups",Sales & GTM,2026-06-01T16:42:41.263+00:00,2026-06-01T16:42:41.263+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,7243bdb7-7f75-4dff-a10f-18bd7296f632,"Research Engineer / Research Scientist / AI Systems Engineer, RSI",Research & ML,2026-08-05T01:53:17.759+00:00,2026-08-05T01:53:17.759+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,72a513ec-d75c-48d5-9fa5-7eac3d7d12b2,Risk & Fraud Analyst,Operations & Support,2026-11-19T17:52:12.877+00:00,2026-11-19T17:52:12.877+00:00,0,2026-11-20,2026-11-22,,0
@@ -1812,7 +1815,7 @@ openai,ashby,83f6d415-9462-4afc-a539-ca8d996e011a,"Product Manager, Enterprise I
 openai,ashby,848c5e55-422c-4797-add4-22e0e6511a47,Accounting Manager,Finance,2026-10-08T01:38:48.962+00:00,2026-10-08T01:38:48.962+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,850a0f1b-26ed-462e-9236-22c9f09aa03c,Europe Trade Compliance Lead,Finance,2026-10-28T23:28:31.157+00:00,2026-10-28T23:28:31.157+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,85feb543-f234-4db3-9d9c-a6fb195ddc19,Dedicated Support Engineer - Singapore,Operations & Support,2026-09-25T16:43:53.340+00:00,2026-09-25T16:43:53.340+00:00,0,2026-11-20,2026-11-22,,0
-openai,ashby,872ca3d0-c8c0-4585-9a34-7f9ed6b4dbf9,"Research Engineer/Research Scientist- Post Training, Model Experience",Research & ML,2026-07-22T15:54:35.536+00:00,2026-07-22T15:54:35.536+00:00,0,2026-11-20,2026-11-22,,0
+openai,ashby,872ca3d0-c8c0-4585-9a34-7f9ed6b4dbf9,"Research Engineer/Research Scientist- Post Training, Model Experience",Research & ML,2026-07-22T15:54:35.536+00:00,2026-07-22T15:54:35.536+00:00,0,2026-11-20,2026-11-22,2026-11-22,0
 openai,ashby,87989505-81e5-4513-bba0-5f00bb064216,"Applied AI Engineer, Partner - AWS",Sales & GTM,2026-06-01T08:53:34.275+00:00,2026-06-01T08:53:34.275+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,87e5f8c3-3337-480a-9db2-e4cef5db909b,Host Systems Software Engineer,Engineering,2026-06-03T16:55:05.751+00:00,2026-06-03T16:55:05.751+00:00,0,2026-11-20,2026-11-22,,0
 openai,ashby,88164d12-c8ed-4b62-ae26-dcb6f1cc8482,"Software Engineer, Enterprise Controls",Engineering,2026-10-03T05:27:16.161+00:00,2026-10-03T05:27:16.161+00:00,0,2026-11-20,2026-11-22,,0
@@ -2216,3 +2219,9 @@ openai,ashby,38b069ad-857c-485e-b201-3bd7c0b91da4,"Model Policy Manager, Emergin
 openai,ashby,62032f94-87e8-45b8-968c-db9b8893e907,Integrated Marketing Manager,Marketing & Comms,2026-11-21T01:36:53.556+00:00,2026-11-21T01:36:53.556+00:00,0,2026-11-21,2026-11-22,,0
 openai,ashby,ebe31cd6-0b6a-4214-b3c1-7dd7074753d6,"Mechanical Design Engineer, Battery Pack",Research & ML,2026-11-20T20:59:42.769+00:00,2026-11-20T20:59:42.769+00:00,0,2026-11-21,2026-11-22,,0
 openai,ashby,f26bd8f0-5440-46bd-b6c0-8b7465f8e6dc,"Treasury, Trade Finance & Cash Flow Forecasting",Finance,2026-11-20T22:33:35.662+00:00,2026-11-20T22:33:35.662+00:00,0,2026-11-21,2026-11-22,,0
+openai,ashby,6785d983-8831-46d0-9c81-443f83664948,"Research Engineer / Research Scientist, Health",Research & ML,2026-11-22T17:20:10.700+00:00,2026-11-22T17:20:10.700+00:00,0,2026-11-22,2026-11-22,,0
+openai,ashby,740b5d1b-f63d-49bb-962d-8e2778e925ef,"Research Engineer / Research Scientist, Human Flourishing",Research & ML,2026-11-22T17:19:07.642+00:00,2026-11-22T17:19:07.642+00:00,0,2026-11-22,2026-11-22,,0
+openai,ashby,bc85c1a9-0f75-4c3a-807b-6d2bb26c8445,"Research Engineer/Research Scientist- Post Training, Model Experience",Research & ML,2026-11-22T17:14:45.574+00:00,2026-11-22T17:14:45.574+00:00,0,2026-11-22,2026-11-22,,0
+openai,ashby,ce15d226-65db-43f1-98ec-078e96a3a281,"Research Engineer / Research Scientist, Post-Training — Collective Alignment (User Signals)",Research & ML,2026-11-22T17:08:09.743+00:00,2026-11-22T17:08:09.743+00:00,0,2026-11-22,2026-11-22,,0
+openai,ashby,d1906ab2-b829-4a13-b1f2-f4af97d699fa,"Research Engineer/Research Scientist-Post Training, Proactivity",Research & ML,2026-11-22T17:12:41.400+00:00,2026-11-22T17:12:41.400+00:00,0,2026-11-22,2026-11-22,,0
+openai,ashby,ecfe655c-1369-4bcd-aae0-4a3b75fdf61b,"Research Engineer / Research Scientist - Post Training, Memory",Research & ML,2026-11-22T17:17:35.967+00:00,2026-11-22T17:17:35.967+00:00,0,2026-11-22,2026-11-22,,0
