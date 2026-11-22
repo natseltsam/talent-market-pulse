@@ -1,0 +1,8 @@
+company,department,function,suggested_by,confidence,reason
+binance,AR-MENA,Operations & Support,Claude,high,"Only job is 'Customer Support Representative (Arabic & English)'; AR-MENA is a regional support line like Binance's Spanish/Korean Lines, which the rules already map to Operations & Support."
+binance,Big Pay - Bpay,Sales & GTM,Claude,medium,"Only job is 'Manager, Card Business Development & Operations'. Business development is the lead responsibility; the other Big Pay BD department already maps to Sales & GTM."
+binance,Binance Earn,"Product, Design & Programs",Claude,medium,"Jobs are 'Earn Product Operation Manager' and 'Earn Product Operations & User Growth': product operations for the Earn product. Operations & Support is the alternative if you read them as ops roles."
+binance,Convert,Finance,Claude,low,"Only job is 'Senior Algorithmic Trader / Liquidity Researcher'. Trading fits no function well; Finance is closest (markets and liquidity). Research & ML is the alternative. Reviewer: please confirm."
+binance,Exploring Pipeline,Other,Claude,high,"Not a real opening: the only posting is 'Join Binance's Global Talent Network', a sign-up page. Recorded as a reviewed 'Other' so it stops being flagged. Excluding such pages from job counts is a separate decision."
+deliveroo,F&S UK & Ireland,Finance,Claude,high,"Only job is 'Finance and Strategy Senior Associate'; F&S stands for Finance & Strategy."
+deliveroo,Performance & Planning,Operations & Support,Claude,medium,"Only job is 'Senior Associate, Dasher & Logistics': delivery-network operations planning."

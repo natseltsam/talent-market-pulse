@@ -122,23 +122,31 @@ def check_unmapped_departments(unmapped):
         title=f"{len(unmapped)} department(s) not mapped to a function",
         details=("These departments match no rule in `function_map.py`, so their jobs show as "
                  f"'Other' on the dashboard:\n\n| Company | Department | Open jobs |\n|---|---|---|\n{lines}"),
-        runbook=("1. Decide which function each department belongs to. Check a few job titles if unsure.\n"
-                 "2. Add or adjust a keyword rule in `function_map.py`. Mind the rule order: "
-                 "the first match wins.\n"
-                 "3. This issue updates as the list changes and closes itself when the list is empty."),
+        runbook=("1. Ask Claude to suggest a function for each department, with reasons, as a pull request "
+                 "adding rows to `function_overrides.csv`.\n"
+                 "2. Review the pull request: check the reasons against the job titles, edit any rows you "
+                 "disagree with, and make sure the Tests check passes.\n"
+                 "3. Merge it. That's the approval. The next daily run uses the new mappings.\n"
+                 "4. This issue updates as the list changes and closes itself when the list is empty.\n\n"
+                 "For a pattern that will recur across many departments, a keyword rule in "
+                 "`function_map.py` may fit better than one-off overrides."),
         auto_resolve=True,
     )]
 
 
 def load_unmapped_departments():
-    """Departments mapped to 'Other' in the latest snapshot, from the run's local database."""
+    """Departments with no override and no matching rule in the latest snapshot.
+
+    A department a reviewer deliberately mapped to 'Other' has source 'override', so it
+    isn't reported again.
+    """
     if not DB_PATH.exists():
         return pd.DataFrame()
     with sqlite3.connect(DB_PATH) as conn:
         return pd.read_sql(
             """SELECT company, department, COUNT(*) AS jobs
                FROM jobs
-               WHERE function = 'Other' AND department IS NOT NULL
+               WHERE function_source = 'none' AND department IS NOT NULL
                  AND snapshot_date = (SELECT MAX(snapshot_date) FROM jobs)
                GROUP BY company, department
                ORDER BY company, jobs DESC, department""",
