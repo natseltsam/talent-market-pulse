@@ -58,6 +58,19 @@ After each daily run, `alerts.py` checks the data and keeps GitHub Issues (label
 - **Least privilege.** The workflow token can write issues and repo contents only, and it expires when the run ends.
 - **Safe to test.** `python alerts.py --dry-run` reads the real open issues but only prints what it would change.
 
+## Fixing unmapped departments: AI suggests, a person approves
+
+When the *unmapped departments* alert opens, the fix goes through a reviewed pull request:
+
+1. **Suggest.** Claude reads the issue, looks at each department's job titles, and proposes a function with a confidence level and a reason. The suggestions become rows in `function_overrides.csv`, opened as a pull request.
+2. **Check.** The Tests workflow runs on the pull request. A row with an unknown function or a duplicate fails the check, so it can't be merged by accident.
+3. **Approve.** A person reviews the reasons against the job titles, edits any rows they disagree with, and merges. Merging is the approval, and git history records who approved what and when.
+4. **Apply and close.** The next daily run uses the approved mappings, finds nothing unmapped, and the alert issue closes itself.
+
+Overrides are keyed by company *and* department, because the same department name can mean different things at different companies, and they take precedence over the keyword rules. Each job records where its function came from (`override`, `rule`, or `none`), so a department a reviewer deliberately mapped to "Other" isn't flagged again.
+
+The suggestion step currently runs through Claude Code on request, which avoids API costs. In production it would call the Claude API on a schedule; the review and approval steps would stay the same.
+
 ## If this handled employee data
 
 This project uses public data, so committing it to a public repo is fine. For a version built on Greenhouse Harvest or Workday data, I would change:

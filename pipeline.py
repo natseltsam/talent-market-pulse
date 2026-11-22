@@ -15,7 +15,7 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-from function_map import classify_function, clean_department
+from function_map import map_function
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "talent_pulse.db"         # local job-level detail, not committed
@@ -52,7 +52,7 @@ COMPANIES = {
 # The shared schema: one row per job, whichever system it came from
 JOB_COLUMNS = [
     "snapshot_date", "company", "source", "job_id", "requisition_id", "title",
-    "department", "function", "location", "location_count", "posting_count", "published_at",
+    "department", "function", "function_source", "location", "location_count", "posting_count", "published_at",
     "salary_min", "salary_max", "salary_currency", "url",
 ]
 
@@ -66,6 +66,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     title            TEXT    NOT NULL,
     department       TEXT,               -- primary department, as the company names it
     function         TEXT,               -- shared category from function_map.py
+    function_source  TEXT,               -- 'override' (approved), 'rule' (keyword), or 'none' (unmapped)
     location        TEXT,               -- primary location
     location_count   INTEGER,
     posting_count    INTEGER,            -- public listings for this job; only comparable within one ATS
@@ -203,8 +204,9 @@ def migrate_schema(conn):
     """Add columns introduced after the table was first created. CREATE TABLE IF NOT
     EXISTS doesn't change an existing table, so new columns have to be added here."""
     existing = {row[1] for row in conn.execute("PRAGMA table_info(jobs)")}
-    if "function" not in existing:
-        conn.execute("ALTER TABLE jobs ADD COLUMN function TEXT")
+    for column in ["function", "function_source"]:
+        if column not in existing:
+            conn.execute(f"ALTER TABLE jobs ADD COLUMN {column} TEXT")
 
 
 def save_snapshot(conn, snapshot_date, company, jobs):
@@ -350,7 +352,7 @@ def main():
 
         jobs = normalize(company, raw)
         for job in jobs:
-            job["function"] = classify_function(clean_department(job["department"]))
+            job["function"], job["function_source"] = map_function(company, job["department"])
         save_snapshot(conn, snapshot_date, company, jobs)
         jobs_by_company[company] = jobs
 
@@ -368,7 +370,8 @@ def main():
             "open_jobs": len(jobs),
             "open_postings": sum(j["posting_count"] for j in jobs),
             "missing_department": sum(1 for j in jobs if not j["department"]),
-            "unmapped_function": sum(1 for j in jobs if j["function"] == "Other"),
+            # Only jobs nothing covers; a reviewed override to "Other" counts as mapped
+            "unmapped_function": sum(1 for j in jobs if j["function_source"] == "none"),
             # Requisition IDs only exist in Greenhouse; blank means "not applicable", not zero
             "missing_requisition_id": (
                 sum(1 for j in jobs if not j["requisition_id"]) if source == "greenhouse" else None

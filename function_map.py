@@ -3,12 +3,21 @@
 Every company names departments its own way ("SW Eng - Applications-674" at Okta,
 "Engineering (Ads)" at Deliveroo), so comparing them needs a shared taxonomy.
 
-Rules are checked IN ORDER and the first match wins, so order is a business rule.
-For example, Security comes before Engineering so "Security Engineering" counts as
-Security, and Finance comes before Sales so "Accounting Operations" isn't read as
-"Key Accounts". Anything unmatched becomes "Other" and is reported, not hidden.
+Two layers, checked in this order:
+1. Approved overrides (function_overrides.csv): exact company + department decisions,
+   added through reviewed pull requests. They win over everything else.
+2. Keyword rules (FUNCTION_RULES below): checked IN ORDER, first match wins, so order is
+   a business rule. Security comes before Engineering so "Security Engineering" counts as
+   Security; Finance comes before Sales so "Accounting Operations" isn't read as "Key Accounts".
+
+Anything neither layer covers becomes "Other" with source "none", and the daily alerts
+report it, so gaps are visible instead of hidden.
 """
+import csv
 import re
+from pathlib import Path
+
+OVERRIDES_PATH = Path(__file__).parent / "function_overrides.csv"
 
 FUNCTION_RULES = [
     ("Security & Trust", r"secur|secops|\bsdl\b|\bgrc\b|trust|safeguard|surveillance|investigation|safety"),
@@ -34,6 +43,10 @@ FUNCTION_RULES = [
 
 _COMPILED = [(name, re.compile(pattern, re.IGNORECASE)) for name, pattern in FUNCTION_RULES]
 
+# Every valid function name. "Other" is allowed in overrides to record a reviewed decision
+# that something fits no function (e.g. a talent-network page that isn't a real job).
+ALLOWED_FUNCTIONS = [name for name, _ in FUNCTION_RULES] + ["Other"]
+
 
 def clean_department(name):
     """Strip company-specific noise, such as Okta's trailing cost-center codes ('-674')."""
@@ -43,9 +56,45 @@ def clean_department(name):
 
 
 def classify_function(department):
+    """Keyword rules only. Returns a function name; 'Other' if no rule matches."""
     if not department:
         return "Other"
     for function, pattern in _COMPILED:
         if pattern.search(department):
             return function
     return "Other"
+
+
+def load_overrides(path=OVERRIDES_PATH):
+    """Read approved overrides as {(company, cleaned department): function}.
+
+    Fails loudly on a bad row (unknown function, duplicate key) rather than silently
+    mis-mapping jobs. The tests load this file too, so a bad row fails the pull request.
+    """
+    overrides = {}
+    if not path.exists():
+        return overrides
+    with open(path, newline="", encoding="utf-8") as f:
+        for line, row in enumerate(csv.DictReader(f), start=2):
+            key = (row["company"].strip(), clean_department(row["department"]))
+            function = row["function"].strip()
+            if function not in ALLOWED_FUNCTIONS:
+                raise ValueError(f"{path.name} line {line}: unknown function {function!r}. "
+                                 f"Use one of: {', '.join(ALLOWED_FUNCTIONS)}")
+            if key in overrides:
+                raise ValueError(f"{path.name} line {line}: duplicate override for {key}")
+            overrides[key] = function
+    return overrides
+
+
+_OVERRIDES = load_overrides()
+
+
+def map_function(company, department, overrides=None):
+    """Return (function, source). Source is 'override', 'rule', or 'none' (unmapped)."""
+    overrides = _OVERRIDES if overrides is None else overrides
+    cleaned = clean_department(department)
+    if (company, cleaned) in overrides:
+        return overrides[(company, cleaned)], "override"
+    function = classify_function(cleaned)
+    return function, ("rule" if function != "Other" else "none")
