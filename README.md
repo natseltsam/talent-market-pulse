@@ -17,7 +17,10 @@ GitHub Actions runs it daily and commits the new snapshot
 |---|---|
 | `pipeline.py` | Fetches each company's jobs, maps them into one schema, saves a daily snapshot, appends a run log |
 | `app.py` | Dashboard: trend chart, latest counts, pipeline health |
-| `.github/workflows/daily_snapshot.yml` | Runs the pipeline every day at 13:00 UTC |
+| `alerts.py` | Opens, updates, and closes GitHub Issues for pipeline problems (see *Automated alerts*) |
+| `tests/` | Tests for the alert logic, run automatically on every push |
+| `.github/workflows/daily_snapshot.yml` | Runs the pipeline every day at 13:00 UTC, then syncs alerts |
+| `.github/workflows/tests.yml` | Runs the tests on every push and pull request |
 | `function_map.py` | Maps each company's department names to shared functions (Engineering, People…) |
 | `data/openings.csv` | One row per company per day: the history the chart reads |
 | `data/openings_by_function.csv` | One row per company per function per day: powers the function filter |
@@ -37,6 +40,23 @@ GitHub Actions runs it daily and commits the new snapshot
 - **Ask for the fields you need.** Greenhouse leaves out departments unless `content=true` is passed, and Ashby leaves out pay unless `includeCompensation=true` is passed. An early version quietly returned empty departments for every posting, so the pipeline now checks that the fields it relies on are filled in.
 - **UTC dates.** Snapshots are dated in UTC, so the date doesn't depend on where the job runs.
 - **Least privilege.** The workflow token can only write repo contents.
+
+## Automated alerts
+
+After each daily run, `alerts.py` checks the data and keeps GitHub Issues (label `pipeline-alert`) in sync with what it finds:
+
+| Check | Kind | Closes itself? |
+|---|---|---|
+| A company's latest fetch failed | Condition | Yes, after a successful fetch |
+| Departments match no function rule | Condition | Yes, when every department is mapped |
+| Open jobs fell ≥20% (and ≥10 jobs) overnight | Event | No: a person reviews and closes it |
+
+- **No duplicates.** Each issue holds a hidden key (e.g. `<!-- alert-key: fetch-failed:okta -->`). Every run matches problems to issues by key, so the same problem updates its existing issue instead of opening another.
+- **Conditions vs. events.** A condition is a state that can clear, so its issue closes itself with a comment. An event already happened, so its issue waits for a person.
+- **Each issue includes a runbook**: what to check and how to fix it.
+- **Only its own issues.** Issues without a key, like ones people open by hand, are never touched.
+- **Least privilege.** The workflow token can write issues and repo contents only, and it expires when the run ends.
+- **Safe to test.** `python alerts.py --dry-run` reads the real open issues but only prints what it would change.
 
 ## If this handled employee data
 

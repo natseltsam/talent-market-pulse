@@ -5,8 +5,9 @@ on:
     - cron: "0 13 * * *"   # every day at 13:00 UTC
   workflow_dispatch:        # adds a "Run workflow" button for manual runs
 
-permissions:
-  contents: write           # least privilege: only what's needed to commit the new data
+permissions:                # least privilege: only what this job needs
+  contents: write           # commit the new data
+  issues: write             # open, update, and close alert issues
 
 jobs:
   snapshot:
@@ -31,3 +32,9 @@ jobs:
           git add data/
           git diff --cached --quiet || git commit -m "Daily snapshot $(date -u +%F)"
           git push
+
+      # Runs after the commit, so data is saved even if GitHub's issue API has a problem
+      - name: Sync alerts to GitHub Issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # temporary token GitHub creates for this run only
+        run: python alerts.py
