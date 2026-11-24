@@ -176,60 +176,61 @@ snapshot_date,company,source,function,open_jobs,open_postings
 2026-11-22,openai,ashby,Sales & GTM,218,218
 2026-11-22,openai,ashby,Security & Trust,37,37
 2026-11-24,anthropic,greenhouse,Data & Analytics,10,10
-2026-11-24,anthropic,greenhouse,Engineering,120,135
-2026-11-24,anthropic,greenhouse,Finance,37,38
-2026-11-24,anthropic,greenhouse,"Legal, Policy & Compliance",34,34
+2026-11-24,anthropic,greenhouse,Engineering,122,137
+2026-11-24,anthropic,greenhouse,Finance,38,39
+2026-11-24,anthropic,greenhouse,"Legal, Policy & Compliance",33,33
 2026-11-24,anthropic,greenhouse,Marketing & Comms,28,28
 2026-11-24,anthropic,greenhouse,People,14,16
-2026-11-24,anthropic,greenhouse,"Product, Design & Programs",83,95
-2026-11-24,anthropic,greenhouse,Research & ML,63,69
-2026-11-24,anthropic,greenhouse,Sales & GTM,115,124
-2026-11-24,anthropic,greenhouse,Security & Trust,76,82
+2026-11-24,anthropic,greenhouse,"Product, Design & Programs",84,96
+2026-11-24,anthropic,greenhouse,Research & ML,65,71
+2026-11-24,anthropic,greenhouse,Sales & GTM,116,125
+2026-11-24,anthropic,greenhouse,Security & Trust,71,77
 2026-11-24,binance,greenhouse,Data & Analytics,15,18
 2026-11-24,binance,greenhouse,Engineering,18,18
-2026-11-24,binance,greenhouse,Finance,4,4
+2026-11-24,binance,greenhouse,Finance,3,3
 2026-11-24,binance,greenhouse,IT & Business Systems,6,6
-2026-11-24,binance,greenhouse,"Legal, Policy & Compliance",45,45
+2026-11-24,binance,greenhouse,"Legal, Policy & Compliance",46,46
 2026-11-24,binance,greenhouse,Marketing & Comms,15,15
 2026-11-24,binance,greenhouse,Operations & Support,22,23
 2026-11-24,binance,greenhouse,Other,1,1
 2026-11-24,binance,greenhouse,People,6,6
-2026-11-24,binance,greenhouse,"Product, Design & Programs",16,16
+2026-11-24,binance,greenhouse,"Product, Design & Programs",15,15
 2026-11-24,binance,greenhouse,Research & ML,5,5
-2026-11-24,binance,greenhouse,Sales & GTM,60,63
-2026-11-24,binance,greenhouse,Security & Trust,5,5
+2026-11-24,binance,greenhouse,Sales & GTM,59,61
+2026-11-24,binance,greenhouse,Security & Trust,6,6
 2026-11-24,deliveroo,greenhouse,Data & Analytics,5,5
-2026-11-24,deliveroo,greenhouse,Engineering,27,38
+2026-11-24,deliveroo,greenhouse,Engineering,27,39
 2026-11-24,deliveroo,greenhouse,Finance,6,6
-2026-11-24,deliveroo,greenhouse,IT & Business Systems,3,3
+2026-11-24,deliveroo,greenhouse,IT & Business Systems,2,2
 2026-11-24,deliveroo,greenhouse,"Legal, Policy & Compliance",3,3
-2026-11-24,deliveroo,greenhouse,Marketing & Comms,14,15
+2026-11-24,deliveroo,greenhouse,Marketing & Comms,16,17
 2026-11-24,deliveroo,greenhouse,Operations & Support,15,15
+2026-11-24,deliveroo,greenhouse,Other,2,2
 2026-11-24,deliveroo,greenhouse,People,8,8
 2026-11-24,deliveroo,greenhouse,"Product, Design & Programs",7,12
 2026-11-24,deliveroo,greenhouse,Research & ML,5,6
-2026-11-24,deliveroo,greenhouse,Sales & GTM,64,71
+2026-11-24,deliveroo,greenhouse,Sales & GTM,66,74
 2026-11-24,deliveroo,greenhouse,Security & Trust,6,6
 2026-11-24,okta,greenhouse,Data & Analytics,1,1
-2026-11-24,okta,greenhouse,Engineering,128,130
+2026-11-24,okta,greenhouse,Engineering,134,136
 2026-11-24,okta,greenhouse,Finance,12,14
-2026-11-24,okta,greenhouse,IT & Business Systems,40,40
+2026-11-24,okta,greenhouse,IT & Business Systems,41,41
 2026-11-24,okta,greenhouse,"Legal, Policy & Compliance",3,3
-2026-11-24,okta,greenhouse,Marketing & Comms,18,18
-2026-11-24,okta,greenhouse,Operations & Support,11,11
+2026-11-24,okta,greenhouse,Marketing & Comms,17,17
+2026-11-24,okta,greenhouse,Operations & Support,10,10
 2026-11-24,okta,greenhouse,People,13,16
-2026-11-24,okta,greenhouse,"Product, Design & Programs",27,28
+2026-11-24,okta,greenhouse,"Product, Design & Programs",26,27
 2026-11-24,okta,greenhouse,Sales & GTM,93,95
 2026-11-24,okta,greenhouse,Security & Trust,15,15
 2026-11-24,openai,ashby,Data & Analytics,13,13
-2026-11-24,openai,ashby,Engineering,272,272
+2026-11-24,openai,ashby,Engineering,274,274
 2026-11-24,openai,ashby,Finance,28,28
 2026-11-24,openai,ashby,IT & Business Systems,7,7
-2026-11-24,openai,ashby,"Legal, Policy & Compliance",17,17
-2026-11-24,openai,ashby,Marketing & Comms,47,47
-2026-11-24,openai,ashby,Operations & Support,67,67
-2026-11-24,openai,ashby,People,27,27
+2026-11-24,openai,ashby,"Legal, Policy & Compliance",20,20
+2026-11-24,openai,ashby,Marketing & Comms,46,46
+2026-11-24,openai,ashby,Operations & Support,69,69
+2026-11-24,openai,ashby,People,29,29
 2026-11-24,openai,ashby,"Product, Design & Programs",41,41
 2026-11-24,openai,ashby,Research & ML,75,75
-2026-11-24,openai,ashby,Sales & GTM,223,223
+2026-11-24,openai,ashby,Sales & GTM,236,236
 2026-11-24,openai,ashby,Security & Trust,37,37
