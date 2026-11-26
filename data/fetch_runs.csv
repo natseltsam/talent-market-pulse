@@ -94,3 +94,8 @@ started_at,snapshot_date,company,http_status,records_count,error_message,status,
 2026-11-25T22:05:14+00:00,2026-11-25,binance,200,231,,success,greenhouse
 2026-11-25T22:05:14+00:00,2026-11-25,deliveroo,200,193,,success,greenhouse
 2026-11-25T22:05:14+00:00,2026-11-25,openai,200,876,,success,ashby
+2026-11-26T22:03:13+00:00,2026-11-26,anthropic,200,634,,success,greenhouse
+2026-11-26T22:03:13+00:00,2026-11-26,okta,200,360,,success,greenhouse
+2026-11-26T22:03:13+00:00,2026-11-26,binance,200,223,,success,greenhouse
+2026-11-26T22:03:13+00:00,2026-11-26,deliveroo,200,192,,success,greenhouse
+2026-11-26T22:03:13+00:00,2026-11-26,openai,200,876,,success,ashby

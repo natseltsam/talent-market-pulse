@@ -28,3 +28,8 @@ snapshot_date,company,source,open_jobs,open_postings,missing_department,unmapped
 2026-11-25,deliveroo,greenhouse,166,193,0,3,0
 2026-11-25,okta,greenhouse,356,366,0,0,0
 2026-11-25,openai,ashby,876,876,0,0,
+2026-11-26,anthropic,greenhouse,583,634,0,0,0
+2026-11-26,binance,greenhouse,217,223,0,4,1
+2026-11-26,deliveroo,greenhouse,165,192,0,2,0
+2026-11-26,okta,greenhouse,350,360,0,1,0
+2026-11-26,openai,ashby,876,876,0,0,
